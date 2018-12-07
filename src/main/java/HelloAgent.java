@@ -5,5 +5,7 @@ public class HelloAgent extends Agent {
 	{
 		System.out.println("Hello World. ");
 		System.out.println("My name is "+ getLocalName());
+
+
 	}
 }
