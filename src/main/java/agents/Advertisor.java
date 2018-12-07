@@ -1,8 +1,9 @@
+package agents;
+
 import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
-
 
 public class Advertisor extends Agent {
 
@@ -11,14 +12,13 @@ public class Advertisor extends Agent {
     }
 
     @Override
-    protected void setup () {
+    protected void setup() {
         System.out.println("Advertisor agent setup() method invoked.");
-       // doDelete();
         addBehaviour(new CyclicBehaviour() {
             @Override
             public void action() {
                 //receive other's agent message
-                ACLMessage msg=receive();
+                ACLMessage msg = receive();
                 if (msg != null) {
                     // przetwarzanie wiadomości
                     System.out.println("Dostalem te wiadomosc, dzieki!");
@@ -32,9 +32,6 @@ public class Advertisor extends Agent {
 
     protected void takeDown() { //opcjonalnie
         System.out.println("Advertisor: Oooh, am I getting rid of? :( " +  getAID());
-    }
-    public void gownoMetoda() {
-        System.out.println("Jestem gównoMetoda");
     }
 }
 
