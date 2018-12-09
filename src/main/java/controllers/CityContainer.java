@@ -6,21 +6,20 @@ import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import jade.wrapper.StaleProxyException;
 
-public class AgentMainController {
-    private static AgentMainController ourInstance = new AgentMainController();
+public class CityContainer {
+    private static CityContainer ourInstance = new CityContainer();
 
-    public static AgentMainController getInstance() {
+    public static CityContainer getInstance() {
         return ourInstance;
     }
 
-    public AgentMainController addAgent(String nickname, String className) {
+    public CityContainer addAgent(String nickname, String className) {
         jade.core.Runtime runtime = jade.core.Runtime.instance();
         Profile profile = new ProfileImpl();
-        profile.setParameter(Profile.CONTAINER_NAME, "TestContainer");
+        profile.setParameter(Profile.CONTAINER_NAME, "CityContainer");
         profile.setParameter(Profile.MAIN_HOST, "localhost");
         ContainerController container = runtime.createAgentContainer(profile);
         try {
-//            classname powinno miec forme "my.agent.package.AgentClass"
             AgentController ag = container.createNewAgent(nickname,
                     className,
                     new Object[]{});
@@ -31,6 +30,6 @@ public class AgentMainController {
         return getInstance();
     }
 
-    private AgentMainController() {
+    private CityContainer() {
     }
 }

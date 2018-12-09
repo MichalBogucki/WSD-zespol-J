@@ -1,15 +1,16 @@
 package controllers;
 
-import controllers.AgentMainController;
+import constants.AgentConstants;
+import constants.AgentReceivers;
 import jade.core.Agent;
 
 public class CreatorAgent extends Agent {
     protected void setup() {
         System.out.println("Tworze " + getLocalName());
-        AgentMainController.getInstance()
-                .addAgent("s", "agents.SenderAgent")
-                .addAgent("a", "agents.HelloAgent")
-                .addAgent("d", "agents.Advertisor");
+        CityContainer.getInstance()
+                .addAgent(AgentReceivers.generatorNickname, AgentConstants.GENERATOR)
+                .addAgent(AgentReceivers.buyerNickname, AgentConstants.BUYER)
+                .addAgent(AgentReceivers.sellerNickname, AgentConstants.SELLER);
         System.out.println("stworzylem");
     }
 }

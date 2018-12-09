@@ -5,9 +5,9 @@ import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
 
-public class Advertisor extends Agent {
+public class AdBuyer extends Agent {
 
-    public Advertisor() {
+    public AdBuyer() {
         System.out.println("I'm here bitches! Advertisor agent" + getAID());
     }
 

@@ -42,29 +42,29 @@ public class CityOntology extends Ontology {
     public CityOntology() {
         super(ONTOLOGY_NAME, BasicOntology.getInstance());
 
-        try {
-            add(new ConceptSchema(BANNER ), Banner.class);
-            add(new ConceptSchema(NODE_NUMBER ), NodeNumber.class);
-            add(new ConceptSchema(POPULATION ), Population.class);
-            add(new ConceptSchema(TIME_FRAME ), TimeFrame.class);
-            add(new ConceptSchema(IS_SOLD ), IsSold.class);
-            add(new ConceptSchema(ADVERTISEMENT_SELLER), SellerAdvertisement.class);
-            add(new ConceptSchema(SELLER_NAME ), SellerName.class);
-            add(new ConceptSchema(SELLER_BANNER ), SellerBanner.class);
-            add(new ConceptSchema(SELLER_SUBSCRIPTION_COST), SubscriptionCost.class);
-            add(new ConceptSchema(SELLER_SUBSCRIBENTS ), Subscribents.class);
-            add(new ConceptSchema(SELLER_AUCTION_WINNER ), AuctionWinner.class);
-            add(new ConceptSchema(ADVERTISEMENT_BUYER), BuyerAdvertisement.class);
-            add(new ConceptSchema(BUYER_SUBSCRIPTION_OFFER ), SubscriptionOffer.class);
-            add(new ConceptSchema(BUYER_SUBSCRIBED_BANNERS ), SubscribedBanners.class);
-            add(new ConceptSchema(DATA_GENERATOR ), DataGenerator.class);
-            add(new ConceptSchema(DATA_GENERATOR_NAME ), GeneratorName.class);
-            add(new ConceptSchema(DATA_GENERATOR_POPULATION ), Population.class);
-            add(new ConceptSchema(DATA_GENERATOR_LOCAL_BANNERS ), LocalBanners.class);
-
-        }
-        catch (OntologyException oe){
-            oe.printStackTrace();
-        }
+//        try {
+//            add(new ConceptSchema(BANNER ), Banner.class);
+//            add(new ConceptSchema(NODE_NUMBER ), NodeNumber.class);
+//            add(new ConceptSchema(POPULATION ), Population.class);
+//            add(new ConceptSchema(TIME_FRAME ), TimeFrame.class);
+//            add(new ConceptSchema(IS_SOLD ), IsSold.class);
+//            add(new ConceptSchema(ADVERTISEMENT_SELLER), SellerAdvertisement.class);
+//            add(new ConceptSchema(SELLER_NAME ), SellerName.class);
+//            add(new ConceptSchema(SELLER_BANNER ), SellerBanner.class);
+//            add(new ConceptSchema(SELLER_SUBSCRIPTION_COST), SubscriptionCost.class);
+//            add(new ConceptSchema(SELLER_SUBSCRIBENTS ), Subscribents.class);
+//            add(new ConceptSchema(SELLER_AUCTION_WINNER ), AuctionWinner.class);
+//            add(new ConceptSchema(ADVERTISEMENT_BUYER), BuyerAdvertisement.class);
+//            add(new ConceptSchema(BUYER_SUBSCRIPTION_OFFER ), SubscriptionOffer.class);
+//            add(new ConceptSchema(BUYER_SUBSCRIBED_BANNERS ), SubscribedBanners.class);
+//            add(new ConceptSchema(DATA_GENERATOR ), DataGenerator.class);
+//            add(new ConceptSchema(DATA_GENERATOR_NAME ), GeneratorName.class);
+//            add(new ConceptSchema(DATA_GENERATOR_POPULATION ), Population.class);
+//            add(new ConceptSchema(DATA_GENERATOR_LOCAL_BANNERS ), LocalBanners.class);
+//
+//        }
+//        catch (OntologyException oe){
+//            oe.printStackTrace();
+//        }
     }
 }
