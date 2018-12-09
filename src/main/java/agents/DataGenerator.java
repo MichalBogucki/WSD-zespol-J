@@ -1,10 +1,7 @@
 package agents;
 
 import behaviors.GeneratingBehavior;
-import jade.core.AID;
 import jade.core.Agent;
-import jade.core.behaviours.TickerBehaviour;
-import jade.lang.acl.ACLMessage;
 
 public class DataGenerator extends Agent {
 
@@ -14,7 +11,7 @@ public class DataGenerator extends Agent {
 
     @Override
     protected void setup() {
-        addBehaviour(new GeneratingBehavior(this, 5000));
+        addBehaviour(new GeneratingBehavior(this, 2000));
     }
 
 
