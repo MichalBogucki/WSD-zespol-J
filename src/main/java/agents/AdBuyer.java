@@ -7,13 +7,10 @@ import jade.lang.acl.ACLMessage;
 
 public class AdBuyer extends Agent {
 
-    public AdBuyer() {
-        System.out.println("I'm here bitches! Advertisor agent" + getAID());
-    }
+    public AdBuyer() {}
 
     @Override
     protected void setup() {
-        System.out.println("Advertisor agent setup() method invoked.");
         addBehaviour(new CyclicBehaviour() {
             @Override
             public void action() {
@@ -21,7 +18,7 @@ public class AdBuyer extends Agent {
                 ACLMessage msg = receive();
                 if (msg != null) {
                     // przetwarzanie wiadomości
-                    System.out.println("Dostalem te wiadomosc, dzieki!");
+                    System.out.println("Processing");
                 }
                 else {
                    block();
@@ -31,7 +28,7 @@ public class AdBuyer extends Agent {
     }
 
     protected void takeDown() { //opcjonalnie
-        System.out.println("Advertisor: Oooh, am I getting rid of? :( " +  getAID());
+        System.out.println("Advertisor down" +  getAID());
     }
 }
 

@@ -17,6 +17,6 @@ public class DataGenerator extends Agent {
 
     @Override
     protected void takeDown() { //opcjonalnie
-        System.out.println("MyAgent: Oooh, am I getting rid of? :( " +  getAID());
+        System.out.println("DataGenerator down  " +  getAID());
     }
 }
