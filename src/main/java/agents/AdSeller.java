@@ -9,10 +9,10 @@ import java.util.HashMap;
 public class AdSeller extends Agent {
 
     private HashMap<Long, Integer> timeWithPopulation = new HashMap<Long, Integer>();
-//todo - SORTOWAC PO UNIX TIME!!!!!!!!!!!!!!!!!
     @Override
     protected void setup() {
         super.setup();
+        System.out.println("Jestem agent " + getAID());
         addBehaviour(new SellingBehavior(this));
         addBehaviour(new PrintingBehaviour(this, 6000));
     }

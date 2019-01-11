@@ -6,6 +6,7 @@ import jade.lang.acl.ACLMessage;
 import jade.lang.acl.UnreadableException;
 import utils.MyEntry;
 
+// on przyjmuje wiadomosc i na niej dopiero operuje
 public class SellingBehavior extends CyclicBehaviour {
 
     public SellingBehavior(AdSeller a) {

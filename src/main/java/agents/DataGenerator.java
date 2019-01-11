@@ -4,7 +4,8 @@ import behaviors.GeneratingBehavior;
 import jade.core.Agent;
 
 public class DataGenerator extends Agent {
-
+//todo - dodac do sellerow buyerow
+//todo -
     public DataGenerator() {
         System.out.println(getAID() + " agent created.");
     }

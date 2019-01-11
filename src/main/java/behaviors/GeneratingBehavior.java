@@ -22,8 +22,9 @@ public class GeneratingBehavior extends TickerBehaviour {
     public void onTick() {
         //send the message
         ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
-        msg.addReceiver(new AID(AgentReceivers.sellerNickname, AID.ISLOCALNAME));
-        msg.setLanguage("Polish");
+        msg.addReceiver(new AID(AgentReceivers.firstSeller, AID.ISLOCALNAME));
+        msg.addReceiver(new AID(AgentReceivers.secondSeller, AID.ISLOCALNAME));
+        msg.setLanguage("English");
         try {
             msg.setContentObject(generateData());
         } catch(IOException e) {

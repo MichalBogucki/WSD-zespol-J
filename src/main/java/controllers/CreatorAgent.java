@@ -8,8 +8,10 @@ public class CreatorAgent extends Agent {
     protected void setup() {
         CityContainer.getInstance()
                 .addAgent(AgentReceivers.generatorNickname, AgentConstants.GENERATOR)
-                .addAgent(AgentReceivers.buyerNickname, AgentConstants.BUYER)
-                .addAgent(AgentReceivers.sellerNickname, AgentConstants.SELLER);
+                .addAgent(AgentReceivers.firstBuyer, AgentConstants.BUYER)
+                .addAgent(AgentReceivers.secondBuyer, AgentConstants.BUYER)
+                .addAgent(AgentReceivers.firstSeller, AgentConstants.SELLER)
+                .addAgent(AgentReceivers.secondSeller, AgentConstants.SELLER);
         System.out.println("Agents created");
     }
 }

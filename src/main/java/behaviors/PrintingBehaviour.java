@@ -5,6 +5,7 @@ import jade.core.Agent;
 import jade.core.behaviours.TickerBehaviour;
 import utils.MyEntry;
 
+import java.sql.SQLOutput;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -31,7 +32,7 @@ public class PrintingBehaviour extends TickerBehaviour {
             int ppl = e.getValue();
             System.out.println("Predicted time: " + date.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
             System.out.println("    Predicted ammount of people: " + ppl);
+            System.out.println("MAM NA IMIE " + adSeller.getAID());
         });
-        System.out.println("---------------------------------------");
     }
 }
