@@ -14,7 +14,7 @@ public class AdSeller extends Agent {
     protected void setup() {
         super.setup();
         addBehaviour(new SellingBehavior(this));
-        addBehaviour(new PrintingBehaviour(this, 15000));
+        addBehaviour(new PrintingBehaviour(this, 6000));
     }
 
     public HashMap<Long, Integer> getTimeWithPopulation() {
